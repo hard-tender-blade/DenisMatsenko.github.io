@@ -1,0 +1,11 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.projectsContent::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}

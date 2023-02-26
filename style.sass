@@ -1,0 +1,296 @@
+*
+    margin: 0
+    padding: 0
+    font-family: 'Bebas Neue', cursive
+    letter-spacing: 0.05rem
+    overflow-x: hidden
+    transition: all 0.2s
+
+body
+    display: flex
+    flex-direction: column
+
+
+$mb: #91d4de
+$my: #fec7a0
+$mp: #817bc7
+$mw: #fffeff
+
+
+.navbarSpace
+    display: none
+
+.navbarWrapper 
+    background-color: $mw
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 4rem
+    width: 100vw
+    font-size: 2rem
+    position: fixed
+
+    color: $mb
+    user-select: none
+
+    .name 
+        margin-left: 0.8rem
+
+    .btnsWrapper
+        display: flex
+        justify-content: space-between
+        width: 20rem
+        margin-right: 0.8rem
+
+        a
+            text-decoration: none
+            color: $mb
+
+        .navbtn
+            
+            &:hover
+                color: $my
+                cursor: pointer
+            
+.aboutWrapper 
+    background-color: $mb
+    display: flex
+    min-height: 100vh
+    justify-content: center
+    align-items: center
+    
+    .aboutContent
+        width: 40rem
+        color: $mw
+        overflow: hidden
+
+        .title
+            font-size: 3.2rem
+            white-space: nowrapw
+            margin-top: 2rem
+
+        .rowWrapper
+            
+            font-size: 1.8rem
+            margin-left: 3.5rem
+
+            .row
+                a
+                    color: $mp
+                    text-decoration: none
+
+.projectsWrapper
+    background-color: $my
+    display: flex
+    min-height: 100vh
+    justify-content: center
+    align-items: center
+
+    .projectsContent
+        width: 90vw
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+
+        .projectWrapper
+            height: 12rem
+            width: 28rem
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0.2rem
+
+            .project
+                background-color: white
+                color: $mb
+                height: 10rem
+                width: 26rem
+                border-radius: 0.5rem
+                overflow: hidden
+
+                &:hover
+                    height: 12rem
+                    width: 28rem
+
+                a
+                    text-decoration: none
+                    color: $mp
+                
+                .title
+                    margin-top: 0.4rem
+                    margin-left: 0.9rem
+                    font-size: 2.5rem
+                
+                .description
+                    margin-left: 0.9rem
+                    font-size: 1.7rem
+                
+                .language
+                    margin-left: 0.9rem
+
+
+.contactWrapper
+    background-color: $mb
+    display: flex
+    min-height: 100vh
+    justify-content: center
+    align-items: center     
+
+    .contactContent
+        color: $mw
+        
+        .title
+            font-size: 2rem
+
+        .contactList
+            font-size: 3.4rem
+            margin-left: 2rem
+
+
+@media all and (max-width:700px)
+    .navbarSpace
+        display: flex
+
+    .navbarWrapper
+        display: none
+
+
+    .navbarWrapper 
+        display: flex
+        flex-direction: column
+        height: 7rem
+
+        .btnsWrapper
+            margin: 0rem
+            margin-bottom: 0.6rem
+        
+        .name
+            margin: 0rem
+            margin-top: 0.7rem
+
+
+    
+    .aboutWrapper         
+        .aboutContent
+            width: 80vw
+            .title
+                font-size: 2rem
+                white-space: nowrapw
+                margin-top: 2rem
+
+            .rowWrapper
+                font-size: 1.2rem
+                margin-left: 3.5rem
+
+
+    .projectsWrapper
+        margin: 0
+        min-height: 100vh
+        
+        .projectsContent
+            width: 90vw
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+
+            // .projectWrapper
+            //     height: 11rem
+            //     width: 11rem
+            //     display: flex
+            //     justify-content: center
+            //     align-items: center
+            //     margin: 0.2rem
+
+                // .project
+                    background-color: white
+                    color: $mb
+                    height: 10rem
+                    width: 10rem
+                    border-radius: 0.5rem
+                    overflow: hidden
+
+                    &:hover
+                        height: 10rem
+                        width: 10rem
+                    
+                    .title
+                        margin-top: 0.4rem
+                        margin-left: 0.9rem
+                        font-size: 2rem
+                    
+                    .description
+                        width: 90%
+                        margin-left: 0.9rem
+                        font-size: 1.45rem
+                    
+                    .language
+                        display: none
+
+    .contactWrapper
+        background-color: $mb
+        display: flex
+        min-height: 100vh
+        justify-content: center
+        align-items: center     
+
+        .contactContent
+            color: $mw
+            width: 90vw
+            
+            .title
+                font-size: 1.4rem
+
+            .contactList
+                font-size: 2.2rem
+                margin-left: 1rem
+
+
+@media all and (max-width:410px)
+    .navbarWrapper
+        height: 5.5rem
+
+        .name
+            font-size: 1.4rem
+
+        .btnsWrapper
+            justify-content: space-around
+
+            .navbtn
+                font-size: 1.4rem
+
+
+    .aboutWrapper         
+        .aboutContent
+            width: 90vw
+            .title
+                font-size: 2rem
+                white-space: nowrapw
+                margin-top: 2rem
+
+            .rowWrapper
+                margin-left: 1rem
+                font-size: 1rem
+
+
+    .contactWrapper
+        background-color: $mb
+        display: flex
+        min-height: 100vh
+        justify-content: center
+        align-items: center     
+
+        .contactContent
+            color: $mw
+            width: 90vw
+            
+            .title
+                font-size: 1rem
+
+            .contactList
+                font-size: 1.6rem
+                margin-left: 1rem
+
+
+    
+
+        
