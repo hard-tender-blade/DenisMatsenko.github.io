@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b0dcc7fd.css",
+    "main.js": "/static/js/main.e01e0100.js",
+    "static/media/orange.png": "/static/media/orange.d982c6938e4b05601dd1.png",
+    "static/media/def.webp": "/static/media/def.a9e4f65c26506fc06063.webp",
+    "index.html": "/index.html",
+    "main.b0dcc7fd.css.map": "/static/css/main.b0dcc7fd.css.map",
+    "main.e01e0100.js.map": "/static/js/main.e01e0100.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0dcc7fd.css",
+    "static/js/main.e01e0100.js"
+  ]
+}
